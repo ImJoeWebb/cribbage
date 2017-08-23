@@ -12,4 +12,11 @@ defmodule Cribbage.Deck do
   @moduledoc """
   The top of the deck corresponds to the first element of the list.
   """
+
+  @doc """
+  Shuffles the deck randomly.
+  """
+  def shuffle(deck = %__MODULE__{}) do
+    %{deck | cards: Enum.shuffle(deck.cards)}
+  end
 end
