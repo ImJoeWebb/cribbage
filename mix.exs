@@ -20,6 +20,8 @@ defmodule Cribbage.Mixfile do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    []
+    [
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
+    ]
   end
 end
