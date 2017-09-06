@@ -1,18 +1,9 @@
 defmodule Cribbage do
+  alias Cribbage.GameState
+
   @moduledoc """
-  Documentation for Cribbage.
+  This is the top-level module, for issuing commands.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cribbage.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def initialize_game, do: %GameState{}
 end
